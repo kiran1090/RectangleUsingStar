@@ -1,16 +1,16 @@
 import java.util.Scanner;
-public class SquarePattern{
-    public static void main(String[] args){
-        int i, j, my_input;
-        Scanner my_scanner = new Scanner(System.in);
-        System.out.print("Enter the length of a side : ");
-        my_input = my_scanner.nextInt();
-        System.out.println("The square pattern : ");
-        for(i = 1; i <= my_input; i++){
-            for(j = 1; j <= my_input; j++){
+public class SquarePattern {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter row and column");
+        int row = sc.nextInt();
+        int col = sc.nextInt();
+        //Nested Loop
+        for (int i = 1; i <= row; i++) {
+            for (int j = 1; j <= col; j++)
                 System.out.print("*");
-            }
-            System.out.print("");
+            System.out.println();
         }
     }
+
 }
